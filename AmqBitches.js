@@ -24,7 +24,7 @@ function sendChatMessage(message) {
     gameChat.$chatInputField.val(message);
     gameChat.sendMessage();
 }
-    // Não Mexer Acima
+    // Não Mexer Acima++
 const comandos = {
     // Strike Witches
     501: "MisatoFukuenSaekoChibaKaoriNazukaMiyukiSawashiroRieTanakaMieSonozakiSakuraNogawaChiwaSaitoAmiKoshimizuMaiKadowakiErikaNakai",
