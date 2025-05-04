@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Amq Bitches
 // @namespace    Daijobi + Bartolominho
-// @version      1.01
+// @version      1.02
 // @description  AutoSend Bitches to the Chat
 // @author       TheRamers & Bartolominho
 // @match        https://animemusicquiz.com/*
