@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Amq Bitches
 // @namespace    Daijobi + Bartolominho
-// @version      1
+// @version      1.01
 // @description  AutoSend Bitches to the Chat
 // @author       TheRamers & Bartolominho
 // @match        https://animemusicquiz.com/*
@@ -24,13 +24,46 @@ function sendChatMessage(message) {
     gameChat.$chatInputField.val(message);
     gameChat.sendMessage();
 }
-    // Não Mexer Acima++
+    // Não Mexer Acima
 const comandos = {
     // Strike Witches
     501: "MisatoFukuenSaekoChibaKaoriNazukaMiyukiSawashiroRieTanakaMieSonozakiSakuraNogawaChiwaSaitoAmiKoshimizuMaiKadowakiErikaNakai",
-    
-    502: "AiKakumaRieSuegaraRiMurakawaNatsumiTakamoriKayoIshidaYumiHaraHarukaTeruiMarinMizutaniHiromiIgarashiRinaSatou",
-    502ova: "AiKakumaMaiKadowakiAyuruOhashi",
+    Miyafuji: "Misato Fukuen",
+    Sakamoto: "Saeko Chiba",
+    Lynne: "Kaori Nazuka",
+    Perrine: "Miyuki Sawashiro",
+    Minna: "Rie Tanaka",
+    Barkhorn: "Mie Sonozaki",
+    Erica: "Sakura Nogawa",
+    Lucchini: "Chiwa Saito",
+    Shirley: "Ami Koshimizu",
+    Sanya: "Mai Kadowaki",
+    Illu: "Erika Nakai",
+    Shizuka: "Aya Uchida",
+    // Brave Witches
+    502: "AiKakumaRieSuegaraRieMurakawaNatsumiTakamoriKayoIshidaYumiHaraHarukaTeruiMarinMizutaniHiromiIgarashiRinaSatou",
+    Hikari: "Ai Kakuma",
+    Takami: "Rie Suegara",
+    Kanoo: "Rie Murakawa",
+    Nipa: "Natsumi Takamori",
+    Grafin: "Kayo Ishida",
+    Sasha: "Yumi Hara",
+    George: "Haruka Terui",
+    Sadako: "Marin Mizutani",
+    Paula: "Hiromi Igarashi",
+    Gundula: "Rina Satou",
+    // Luminous Witches
+    LuminousWitches: "MisakiYuukiKanaKonakaRioMamesakiRinoYoshikitaRyouMamiyaMinakoHosokawaMaiNarumiAmiAimotoSayakaTsuzuki",
+    Mana: "Misaki Yuuki",
+    Maria: "Kana Konaka",
+    Jo: "Rio Mamesaki",
+    Sylvie: "Rino Yoshikita",
+    Aila: "Ryou Mamiya",
+    Inorin: "Minako Hosokawa",
+    Ginny: "Mai Narumi",
+    Milasha: "Ami Aimoto",
+    Ellie: "Sayaka Tsuzuki",
+    Gracie: "Mikako Komatsu",
     // Adicionar Mais Putas
 };
     // Não Mexer Abaixo
