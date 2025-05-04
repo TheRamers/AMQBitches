@@ -1,1 +1,0 @@
-Odeio minorias
