@@ -7,8 +7,8 @@
 // @match        https://animemusicquiz.com/*
 // @require      https://github.com/joske2865/AMQ-Scripts/raw/master/common/amqScriptInfo.js
 // @require      https://github.com/joske2865/AMQ-Scripts/raw/master/common/amqWindows.js
-// @downloadURL  https://raw.githubusercontent.com/TheRamers/AMQBitches/refs/heads/main/AmqBitches.js
-// @updateURL    https://raw.githubusercontent.com/TheRamers/AMQBitches/refs/heads/main/AmqBitches.js
+// @downloadURL  https://raw.githubusercontent.com/TheRamers/AMQBitches/refs/heads/main/AmqBitches.user.js
+// @updateURL    https://raw.githubusercontent.com/TheRamers/AMQBitches/refs/heads/main/AmqBitches.user.js
 // ==/UserScript==
 
 if (document.getElementById("loginPage")) return;
