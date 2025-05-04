@@ -7,6 +7,8 @@
 // @match        https://animemusicquiz.com/*
 // @require      https://github.com/joske2865/AMQ-Scripts/raw/master/common/amqScriptInfo.js
 // @require      https://github.com/joske2865/AMQ-Scripts/raw/master/common/amqWindows.js
+// @downloadURL  
+// @updateURL    
 // ==/UserScript==
 
 if (document.getElementById("loginPage")) return;
@@ -24,7 +26,9 @@ function sendChatMessage(message) {
 }
     // Não Mexer Acima
 const comandos = {
+    // Strike Witches
     501: "MisatoFukuenSaekoChibaKaoriNazukaMiyukiSawashiroRieTanakaMieSonozakiSakuraNogawaChiwaSaitoAmiKoshimizuMaiKadowakiErikaNakai",
+    
     502: "AiKakumaRieSuegaraRiMurakawaNatsumiTakamoriKayoIshidaYumiHaraHarukaTeruiMarinMizutaniHiromiIgarashiRinaSatou",
     503: "AiKakumaMaiKadowakiAyuruOhashi",
     // Adicionar Mais Putas
