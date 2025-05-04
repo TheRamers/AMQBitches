@@ -30,7 +30,7 @@ const comandos = {
     501: "MisatoFukuenSaekoChibaKaoriNazukaMiyukiSawashiroRieTanakaMieSonozakiSakuraNogawaChiwaSaitoAmiKoshimizuMaiKadowakiErikaNakai",
     
     502: "AiKakumaRieSuegaraRiMurakawaNatsumiTakamoriKayoIshidaYumiHaraHarukaTeruiMarinMizutaniHiromiIgarashiRinaSatou",
-    503: "AiKakumaMaiKadowakiAyuruOhashi",
+    502ova: "AiKakumaMaiKadowakiAyuruOhashi",
     // Adicionar Mais Putas
 };
     // Não Mexer Abaixo
