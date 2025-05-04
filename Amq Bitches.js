@@ -7,8 +7,8 @@
 // @match        https://animemusicquiz.com/*
 // @require      https://github.com/joske2865/AMQ-Scripts/raw/master/common/amqScriptInfo.js
 // @require      https://github.com/joske2865/AMQ-Scripts/raw/master/common/amqWindows.js
-// @downloadURL  
-// @updateURL    
+// @downloadURL  https://github.com/TheRamers/AMQ-Bitches/raw/main/Amq%20Bitches.js
+// @updateURL    https://github.com/TheRamers/AMQ-Bitches/raw/main/Amq%20Bitches.js
 // ==/UserScript==
 
 if (document.getElementById("loginPage")) return;
