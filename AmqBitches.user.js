@@ -39,6 +39,7 @@ const comandos = {
     sanya: "Mai Kadowaki",
     illu: "Erika Nakai",
     shizuka: "Aya Uchida",
+    501g: "Dai 501 Tougou Sentou Koukuu-dan Aya Uchida",
     // Brave Witches
     502: "AiKakumaRieSuegaraRieMurakawaNatsumiTakamoriKayoIshidaYumiHaraHarukaTeruiMarinMizutaniHiromiIgarashiRinaSatou",
     hikari: "Ai Kakuma",
