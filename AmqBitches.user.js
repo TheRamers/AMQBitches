@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Amq Bitches
 // @namespace    Daijobi + Bartolominho
-// @version      1.02
+// @version      1.03
 // @description  AutoSend Bitches to the Chat
 // @author       TheRamers & Bartolominho
 // @match        https://animemusicquiz.com/*
@@ -27,9 +27,9 @@ function sendChatMessage(message) {
     // Não Mexer Acima
 const comandos = {
     // Strike Witches
-    501: "MisatoFukuenSaekoChibaKaoriNazukaMiyukiSawashiroRieTanakaMieSonozakiSakuraNogawaChiwaSaitoAmiKoshimizuMaiKadowakiErikaNakai",
+    501: "MisatoFukuenSaekoChibaKaoriNazukaMiyukiSawashiroRieTanakaMieSonozakiSakuraNogawaChiwaSaitoAmiKoshimizuMaiKadowakiErikaNakaiSaoriSeto",
     miyafuji: "Misato Fukuen",
-    sakamoto: "Saeko Chiba",
+    sakamoto: "Saeko Chiba,Saori Seto",
     lynne: "Kaori Nazuka",
     perrine: "Miyuki Sawashiro",
     minna: "Rie Tanaka",
