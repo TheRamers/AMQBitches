@@ -1,14 +1,13 @@
 // ==UserScript==
 // @name         Amq Bitches
 // @namespace    Daijobi + Bartolominho
-// @version      1.03
+// @version      1.04
 // @description  AutoSend Bitches to the Chat
 // @author       TheRamers & Bartolominho
 // @match        https://animemusicquiz.com/*
 // @require      https://github.com/joske2865/AMQ-Scripts/raw/master/common/amqScriptInfo.js
-// @require      https://github.com/joske2865/AMQ-Scripts/raw/master/common/amqWindows.js
-// @downloadURL  https://raw.githubusercontent.com/TheRamers/AMQBitches/refs/heads/main/AmqBitches.user.js
-// @updateURL    https://raw.githubusercontent.com/TheRamers/AMQBitches/refs/heads/main/AmqBitches.user.js
+// @downloadURL  https://github.com/TheRamers/AMQBitches/raw/refs/heads/main/AmqBitches.user.js
+// @updateURL    https://github.com/TheRamers/AMQBitches/raw/refs/heads/main/AmqBitches.user.js
 // ==/UserScript==
 
 if (document.getElementById("loginPage")) return;
