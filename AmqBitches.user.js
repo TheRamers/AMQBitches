@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Amq Bitches
 // @namespace    Daijobi + Bartolominho
-// @version      1.05
+// @version      1.06
 // @description  AutoSend Bitches to the Chat
 // @author       TheRamers & Bartolominho
 // @match        https://animemusicquiz.com/*
@@ -39,7 +39,7 @@ const comandos = {
     sanya: "Mai Kadowaki",
     illu: "Erika Nakai",
     shizuka: "Aya Uchida",
-    501g: "Dai 501 Tougou Sentou Koukuu-dan Aya Uchida",
+    g501: "Dai 501 Tougou Sentou Koukuu-dan Aya Uchida",
     // Brave Witches
     502: "AiKakumaRieSuegaraRieMurakawaNatsumiTakamoriKayoIshidaYumiHaraHarukaTeruiMarinMizutaniHiromiIgarashiRinaSatou",
     hikari: "Ai Kakuma",
