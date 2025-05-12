@@ -1,14 +1,15 @@
 /* ==UserStyle==
 @name           ChangeAwnserPosition
 @namespace      github.com/TheRamers/AMQBitches
-@version        1.01
+@version        1.02
 @description    Change Awnser Position as Fix
 @author         TheRamers & Bartolominho
-@match          https://animemusicquiz.com/*
-
 ==/UserStyle== */
 
-#qpAnswerInputContainer {
+@-moz-document domain("animemusicquiz.com") {
+/* Insert code here... */
+
+}#qpAnswerInputContainer {
   position: absolute;      /* Positions the container absolutely relative to the nearest positioned ancestor */
   right: 0px;              /* Aligns the container to the right edge */
   left: 10px;              /* Adds a 10px gap from the left edge (conflicts with right: 0px; browser resolves based on rules) */
