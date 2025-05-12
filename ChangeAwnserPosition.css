@@ -1,0 +1,34 @@
+/* ==UserStyle==
+@name           ChangeAwnserPosition
+@namespace      github.com/TheRamers/AMQBitches
+@version        1.00
+@description    Change Awnser Position as Fix
+@author         Daijobi
+==/UserStyle== */
+
+/* Move the Awnser Container to top of video container
+#qpAnswerInputContainer {
+  position: absolute;
+  right: 0px;
+  left: 10px;
+  z-index: 100;
+}
+
+/* Move the avatar row container */
+#qpAvatarRowAvatarContainer {
+  position: absolute;  /* or "fixed" if you want it to stay pinned on screen while scrolling */
+  top: 290px;           /* vertical offset */
+  left: 600px;          /* horizontal offset */
+  z-index: 1000;        /* ensures it stays visible above other elements */
+}
+
+/* Video container */
+#qpVideoContainer {
+  display: block;        /* ensure it's visible */
+  position: absolute;    /* or fixed, if you want it to stay visible even while scrolling */
+  top: 150px;            /* distance from the top */
+  right: 0px;            /* distance from the right */
+  width: 720px;          /* optional size */
+  height: 0px;           /* optional size */
+  z-index: 100;          /* ensure it stays visible above other elements */
+}
