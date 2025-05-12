@@ -1,34 +1,68 @@
 /* ==UserStyle==
 @name           ChangeAwnserPosition
 @namespace      github.com/TheRamers/AMQBitches
-@version        1.00
+@version        1.01
 @description    Change Awnser Position as Fix
-@author         Daijobi
+@author         TheRamers & Bartolominho
+@match          https://animemusicquiz.com/*
+
 ==/UserStyle== */
 
-/* Move the Awnser Container to top of video container
 #qpAnswerInputContainer {
-  position: absolute;
-  right: 0px;
-  left: 10px;
-  z-index: 100;
+  position: absolute;      /* Positions the container absolutely relative to the nearest positioned ancestor */
+  right: 0px;              /* Aligns the container to the right edge */
+  left: 10px;              /* Adds a 10px gap from the left edge (conflicts with right: 0px; browser resolves based on rules) */
+  z-index: 100;            /* Layer order: higher number means it appears above lower ones */
 }
 
-/* Move the avatar row container */
 #qpAvatarRowAvatarContainer {
-  position: absolute;  /* or "fixed" if you want it to stay pinned on screen while scrolling */
-  top: 290px;           /* vertical offset */
-  left: 600px;          /* horizontal offset */
-  z-index: 1000;        /* ensures it stays visible above other elements */
+  position: absolute;           /* Positions this box absolutely in the page */
+  top: 300px;                   /* Sets the top distance from the page/window */
+  left: 50%;                    /* Starts at 50% of the width (middle) */
+  transform: translateX(-50%);  /* Adjusts the position to truly center horizontally */
+  z-index: 1000;                /* Ensures it appears above almost everything else */
+  padding: 10px;                /* Adds spacing inside the box */
+  border-radius: 8px;           /* Rounds the corners of the box */
+  white-space: nowrap;          /* Prevents text/content from breaking into new lines */
+  max-width: 100vw;             /* Prevents the box from exceeding the full width of the viewport */
 }
 
-/* Video container */
 #qpVideoContainer {
-  display: block;        /* ensure it's visible */
-  position: absolute;    /* or fixed, if you want it to stay visible even while scrolling */
-  top: 150px;            /* distance from the top */
-  right: 0px;            /* distance from the right */
-  width: 720px;          /* optional size */
-  height: 0px;           /* optional size */
-  z-index: 100;          /* ensure it stays visible above other elements */
+  display: block;             /* Ensures the element is rendered as a block */
+  position: absolute;         /* Positions absolutely in the window */
+  top: 150px;                 /* Pushes it down 150px from the top */
+  right: 0px;                 /* Aligns it to the right edge of the screen */
+  width: 720px;               /* Sets a fixed width for the video container */
+  height: 0px;                /* No visible height (likely used for overlays or scripts to adjust dynamically) */
+  z-index: 100;               /* Puts it above most basic elements, but below things like modals or overlays */
+}
+
+.qpAvatarAnswerContainer {
+  max-width: 100%;            /* Prevents the container from growing wider than its parent */
+  left: 1px;                  /* Offsets the container slightly from the left (may need position to take effect) */
+  white-space: normal;        /* Allows automatic line breaks */
+  word-wrap: break-word;      /* Breaks long words that don't fit */
+  overflow-wrap: break-word;  /* Ensures compatibility across browsers for breaking long words */
+}
+
+.qpAvatarAnswerText {
+  white-space: normal;        /* Enables text wrapping */
+  left: 1px;                  /* Slight offset from the left (again, requires positioning to work) */
+  word-wrap: break-word;      /* Wraps long words instead of overflowing */
+  overflow-wrap: break-word;  /* Ensures word breaking compatibility */
+  text-align: center;         /* Centers the text horizontally */
+}
+
+.qpAvatarAnswerText.rightAnswer {
+  white-space: normal;        /* Allows wrapping of text */
+  left: 1px;                  /* Slight left offset */
+  word-wrap: break-word;      /* Prevents overflow by breaking words */
+  overflow-wrap: break-word;  /* Same as above for broader browser support */
+}
+
+.qpAvatarAnswerText.wrongAnswer {
+  white-space: normal;        /* Allows wrapping of text */
+  left: 1px;                  /* Slight left offset */
+  word-wrap: break-word;      /* Prevents long words from overflowing */
+  overflow-wrap: break-word;  /* Browser compatibility for word breaking */
 }
