@@ -32,8 +32,7 @@
   display: block;             /* Ensures the element is rendered as a block */
   position: absolute;         /* Positions absolutely in the window */
   top: 150px;                 /* Pushes it down 150px from the top */
-  right: 0px;                 /* Aligns it to the right edge of the screen */
-  width: 720px;               /* Sets a fixed width for the video container */
+  right: -3px;                /* Aligns it to the right edge of the screen */
   height: 0px;                /* No visible height (likely used for overlays or scripts to adjust dynamically) */
   z-index: 100;               /* Puts it above most basic elements, but below things like modals or overlays */
 }
