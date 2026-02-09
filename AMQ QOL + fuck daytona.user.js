@@ -7,11 +7,12 @@
 // @description  Integration of Mxkyuki DAYT WHY(Short Names)+Einlar Enter DropD with some changes.
 // @description  And made so it doesn't select dropdown when you fully type a name manually for noDD rooms or just for fun :)
 // @match        https://*.animemusicquiz.com/*
+// @require      https://raw.githubusercontent.com/TheRamers/AMQBitches/refs/heads/main/lib/shortcuts.js
 // @grant        GM_getValue
 // @grant        GM_setValue
 // ==/UserScript==
 
-const replace = GM_getValue('atalhos');
+// const replace = GM_getValue('atalhos');
 
 function replaceTitle(answer) {
     let lowerAnswer = answer.toLowerCase();
