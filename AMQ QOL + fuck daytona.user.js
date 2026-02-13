@@ -41,6 +41,8 @@ function inputEvent(payload) {
 
 	if (inputText != firstDrop.toLowerCase())
 		setAnswer(firstDrop);
+	else
+		dropdown.close();
 }
 
 inputBox.addEventListener('keydown', inputEvent);
