@@ -20,20 +20,25 @@ function setAnswer(text) {
 function inputEvent(payload) {
 	let dropdown = quiz.answerInput.typingInput.autoCompleteController.awesomepleteInstance;
 	let inputText = inputBox.value.toLowerCase();
-	let shortcutText = replace[inputText];
-
-	/* prefer shortcuts if available */
-	if (shortcutText) {
-		setAnswer(shortcutText);
-		return;
-	}
 
 	/* skip on empty text or invalid keypress */
 	if (inputText == '' || payload.key != 'Enter')
 		return;
 
-	/* skip on manual selection or unopened dropdown */
-	if (dropdown.selected || !dropdown.isOpened)
+	/* skip on manual selection */
+	if (dropdown.selected)
+		return;
+
+	/* prefer shortcuts if available */
+	let shortcutText = replace[inputText];
+
+	if (shortcutText) {
+		setAnswer(shortcutText);
+		return;
+	}
+
+	/* skip on unopened dropdown */
+	if (!dropdown.isOpened)
 		return;
 
 	/* get first dropdown and set as the answer*/
