@@ -37,8 +37,8 @@ function inputEvent(payload) {
 		return;
 	}
 
-	/* skip on unopened dropdown */
-	if (!dropdown.isOpened)
+	/* skip on previously valid answer */
+	if (quiz.answerInput.typingInput.autoCompleteController.list.includes(inputBox.value))
 		return;
 
 	/* get first dropdown and set as the answer*/
