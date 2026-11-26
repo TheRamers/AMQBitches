@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AMQ QOL + fuck daytona
 // @namespace    https://github.com/TheRamers/AMQBitches
-// @version      0.6
+// @version      0.7
 // @author       Bartolominho
 // @description  Replace short anime names with full titles and select first dropdown answer when Enter is pressed.
 // @description  Integration of Mxkyuki DAYT WHY(Short Names)+Einlar Enter DropD with some changes.
@@ -12,13 +12,17 @@
 
 let inputBox = document.getElementById('qpAnswerInput');
 
+function getDropdown() {
+	return autoCompleteController.awesomepleteInstances.find(a => a.input.id === 'qpAnswerInput');
+}
+
 function setAnswer(text) {
 	quiz.answerInput.setNewAnswer(text);
-	quiz.answerInput.typingInput.autoCompleteController.awesomepleteInstance.close();
+	getDropdown().close();
 }
 
 function inputEvent(payload) {
-	let dropdown = quiz.answerInput.typingInput.autoCompleteController.awesomepleteInstance;
+	let dropdown = autoCompleteController.awesomepleteInstances.find(a => a.input.id === 'qpAnswerInput');
 	let inputText = inputBox.value.toLowerCase();
 
 	/* skip on empty text or invalid keypress */
@@ -38,7 +42,7 @@ function inputEvent(payload) {
 	}
 
 	/* skip on previously valid answer */
-	if (quiz.answerInput.typingInput.autoCompleteController.list.includes(inputBox.value))
+	if (dropdown._list.includes(inputBox.value))
 		return;
 
 	/* get first dropdown and set as the answer*/
